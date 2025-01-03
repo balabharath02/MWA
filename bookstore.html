@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookstore Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to TMD solutions</h1>
+        <p>ongole</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Genres</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Contact Us</a>
+        <a href="#about">About Us</a>
+        <a href="#login">Login</a>
+        <a href="#register">Register</a>
+        <a href="#cart">Cart</a>
+    </nav>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: hsl(147, 82%, 48%);
+    color: rgb(12, 11, 11);
+    padding: 15px 0;
+    text-align: center;
+}
+
+header p {
+    margin: 0;
+    color: #333;
+}
+
+nav {
+    background-color: hsl(0, 0%, 27%);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.book-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.book-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.book-item p {
+    color: #777;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.login-form, .register-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input, .register-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-content p {
+    max-width: 600px;
+}
+
+.about-img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+    </style>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">About the Bookstore</h2>
+            <div class="about-content">
+                <p>We are a family-owned bookstore with a wide selection of books from various genres. Whether you love fiction, mystery, fantasy, or non-fiction, we have something for everyone. We strive to provide our customers with a personal shopping experience and the best prices on books. Thank you for choosing us!</p>
+                <img src= "C:\Users\exam2.RVRjcCSE.000\Desktop\PlantDoc-Dataset-master\y22cb016\Screenshot_2023-12-29-09-14-32-505_com.whatsapp~2.jpg" alt="Bookstore" class="about-img">
+            </div>
+        </section>
+
+        <!-- Featured Books Section -->
+        <h2 class="section-title">Featured Books</h2>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="https://via.placeholder.com/150" alt="Book 1">
+                <h3>Book Title 1</h3>
+                <p>$19.99</p>
+                <button class="button">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="https://via.placeholder.com/150" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>$24.99</p>
+                <button class="button">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="https://via.placeholder.com/150" alt="Book 3">
+                <h3>Book Title 3</h3>
+                <p>$14.99</p>
+                <button class="button">Add to Cart</button>
+            </div>
+            <div class="book-item">
+                <img src="https://via.placeholder.com/150" alt="Book 4">
+                <h3>Book Title 4</h3>
+                <p>$29.99</p>
+                <button class="button">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Login Section -->
+        <section id="login">
+            <h2 class="section-title">Login for Existing Customers</h2>
+            <div class="login-form">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button class="button">Login</button>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="register">
+            <h2 class="section-title">Register for New Customers</h2>
+            <div class="register-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button class="button">Register</button>
+            </div>
+        </section>
+
+        <!-- Shopping Cart Section -->
+        <section id="cart">
+            <h2 class="section-title">Shopping Cart</h2>
+            <p>Your shopping cart is currently empty.</p>
+            <button class="button">Go to Shop</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Bookstore | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
