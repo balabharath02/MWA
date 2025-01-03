@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Information Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+        }
+
+        .toy-image {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .description {
+            max-width: 300px;
+        }
+
+        .cost-of-the-day {
+            font-weight: bold;
+            color: #FF5733;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Toy Information</h1>
+
+    <table>
+        <caption>Toy Inventory</caption>
+        <thead>
+            <tr>
+                <th>Toy Name</th>
+                <th>Category</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Cost of the Day</th>
+                <th>Age Range</th>
+                <th>Available Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Action Figure</td>
+                <td>Figurines</td>
+                <td><img src="https://via.placeholder.com/50" alt="Action Figure" class="toy-image"></td>
+                <td class="description">A collectible action figure perfect for imaginative play and display.</td>
+                <td>$12.99</td>
+                <td class="cost-of-the-day">$9.99</td>
+                <td>6+</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Building Blocks</td>
+                <td>Construction</td>
+                <td><img src="https://via.placeholder.com/50" alt="Building Blocks" class="toy-image"></td>
+                <td class="description">Durable plastic building blocks for creating endless structures and designs.</td>
+                <td>$29.99</td>
+                <td class="cost-of-the-day">$24.99</td>
+                <td>3+</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Plush Bear</td>
+                <td>Stuffed Animals</td>
+                <td><img src="https://via.placeholder.com/50" alt="Plush Bear" class="toy-image"></td>
+                <td class="description">A soft and cuddly stuffed bear for all ages. Ideal for comfort and play.</td>
+                <td>$19.99</td>
+                <td class="cost-of-the-day">$14.99</td>
+                <td>All Ages</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Remote Control Car</td>
+                <td>Vehicles</td>
+                <td><img src="https://via.placeholder.com/50" alt="Remote Control Car" class="toy-image"></td>
+                <td class="description">A fun, fast, and durable remote control car for outdoor play.</td>
+                <td>$35.50</td>
+                <td class="cost-of-the-day">$29.99</td>
+                <td>8+</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Educational Tablet</td>
+                <td>Electronics</td>
+                <td><img src="https://via.placeholder.com/50" alt="Educational Tablet" class="toy-image"></td>
+                <td class="description">A tablet designed for young learners with educational games and apps.</td>
+                <td>$59.99</td>
+                <td class="cost-of-the-day">$49.99</td>
+                <td>3-7</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
